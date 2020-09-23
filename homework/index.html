@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="main">
+        <div id="container">
+          <div id="content" role="main">
+            <!-- TODO: Content goes here -->
+            <body>
+              <header>
+                <a href="#">
+                  <img src="/homework/logo.png" alt="EPAM logo" />
+                </a>
+                <h1>HTML BASICS</h1>
+                <nav>
+                  <ul style="list-style: none; display: flex">
+                    <li style="margin: 15px">
+                      <a href="#home">Home</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#registration">Registration</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#headings">Headings</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#">Types of lists</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#">Image</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#">Table</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#">Blockquotes</a>
+                    </li>
+                    <li style="margin: 15px">
+                      <a href="#">Text formats</a>
+                    </li>
+                  </ul>
+                </nav>
+                <hr />
+              </header>
+
+              <main>
+                <section id="home">
+                  <h2 hidden>Home</h2>
+                  <p>
+                    <strong>Fructose</strong>, or <b>fruit sugar</b>, is a
+                    simple <i>ketonic monosaccharide</i> found in many plants,
+                    where it is often bonded to glucose to form the disaccharide
+                    sucrose. It is one of the three dietary
+                    <u>monosaccharides</u>, along with glucose and galactose,
+                    that are absorbed directly into blood during digestion. Its
+                    formula is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> and its
+                    density is 1.694 g/cm<sup>3</sup>. Fructose was discovered
+                    by French chemist
+                    <a href="#">Augustin-Pierre Dubrunfaut</a>
+                    in 1847, <del> not in 1848</del>.
+                  </p>
+                  <p>
+                    It makes us <strong>strong!</strong>
+                    <em>This is emphasized.</em>
+                  </p>
+                  <p>
+                    Excessive consumption of fructose (especially from
+                    sugar-sweetened beverages) may contribute to insulin
+                    resistance, obesity, elevated
+                    <abbr title="Low-density lipoprotein"> LDL</abbr>
+                    cholesterol and triglycerides, leading to metabolic
+                    syndrome.
+                    <abbr title="European Food Safety Authority">The EFSA</abbr>
+                    stated that fructose may be preferable over sucrose and
+                    glucose in sugar-sweetened foods and beverages because of
+                    its lower effect on postprandial blood sugar levels, and
+                    noted that
+                    <cite>
+                      high intakes of fructose may lead to metabolic
+                      complications such as dyslipidaemia, insulin resistance,
+                      and increased visceral adiposity</cite
+                    >
+                    (this is a citation).
+                  </p>
+                  <hr />
+                </section>
+
+                <section id="registration">
+                  <h2 hidden>Registration</h2>
+                  <form action="#" method="POST">
+                    <fieldset>
+                      <label for="login">Login:</label>
+                      <input type="text" id="login" />
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" />
+                      <label for="password">Password:</label>
+                      <input type="password" id="password" />
+
+                      <label for="progrlang">Select Programming Language</label>
+                      <select id="progrlang" name="progrlang">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="PHP">PHP</option>
+                      </select>
+                    </fieldset>
+
+                    <textarea
+                      name="comments"
+                      id="comments"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                    <button type="submit">Submit</button>
+                  </form>
+                </section>
+
+                <section id="headings">
+                  <h2 hidden>Headings</h2>
+                  <p>
+                    h1 defines the most important heading. h6 defines the least
+                    important heading. Font-size for h1 is the same as font-size
+                    for h2, because we have to use only one h1 on the page, and
+                    it is commonly used inside header
+                  </p>
+                  <ul style="list-style: none">
+                    <li>
+                      <h2>Heading 2</h2>
+                    </li>
+                    <li><h3>Heading 3</h3></li>
+                    <li><h4>Heading 4</h4></li>
+                    <li><h5>Heading 5</h5></li>
+                    <li><h6>Heading 6</h6></li>
+                  </ul>
+                </hr>
+                </section>
+
+                <section id="types of lists">
+                  <p>Unordered Shopping List</p>
+
+                  <ul>
+                    <li>Vegetables:
+                      <ul>
+                        <li>Potatos</li>
+                        <li>Carrots</li>
+                        <li>Cucumbers</li>
+                      </ul>
+                    </li>
+                    <li>Fruits:</li>
+                    <ul>
+                      <li>Apples</li>
+                      <li>Bananas</li>
+                      <li>Pears</li>
+                    </ul>
+                    <li>Milk</li>
+                    <li>Butter</li>
+                  </ul>
+
+                  <p>Definition List</p>
+                  <dl>
+                    <dt>HTML</dt>
+                    <dd>
+                    HTML is the standard markup language to create Web pages.
+                    </dd>
+                  
+                    <dt>CSS</dt>
+                    <dd>
+                    CSS describes how HTML elements are to be displayed.
+                    </dd>
+                  
+                    <dt>JavaScript</dt>
+                    <dd>
+                      JavaScript is a scripting languages, primarily used on the Web.
+                    </dd>
+                  </dl>
+
+                  <p>Ordered To-do List</p>
+
+                  <ol>
+                    <li>Wash your hands</li>
+                    <li>Clean your apartment</li>
+                    <li>Do your homework
+                      <ol type="A.">
+                        <li>Create HTML Page</li>
+                        <li>Check all requirements & folder structure</li>
+                        <li>Upload files</li>
+                      </ol>
+                    </li>
+                  </ol>
+                  <hr>
+                </section>
+
+                <section>
+                  <img src="/homework/fruits.jpg" alt="Picture of fruits" width='auto' height='auto'>
+                <hr>
+                </section>
+
+                <section>
+                  <table>
+                    <caption>
+                      Sugar content of selected common plant foods (g/100g)
+                    </caption>
+                  </table>
+                </section>
+              </main>
+            </body>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
